@@ -1,0 +1,38 @@
+<script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.js"></script>
+
+<script>
+    function setup() {
+        createCanvas(800, 600);
+        noLoop();
+    }
+
+    function draw() {
+        background(color(65,105,225));
+
+        for (let y = height*0.8; y < height; y++) {
+            for (let x = 0; x < width; x++) {
+                set(x,y,color(0,102,51))
+            }
+        }
+
+        for (let i = 0; i<1000; i++) {
+            let a = floor(random(0, width));
+            let b = floor(random(height*0.8, height));
+            set(a, b, color(floor(random(0, 255)), floor(random(0, 255)), floor(random(0, 255))));
+        }
+
+        for (let y = height*0.4; y < height*0.8; y++) {
+            for (let x = width*0.2; x < width*0.8; x++) {
+                set(x,y,color(150,75,0))
+            }
+        }
+
+        for (let y = height*0.1, w = 0; y<height*0.4; y++, w+=2) {
+            for (let x = width/2-w; x<width/2+w; x++) {
+                set(x,y,color(250, 128, 114));
+            }
+        }
+
+        updatePixels();
+    }
+</script>
