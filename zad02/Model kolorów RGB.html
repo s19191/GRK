@@ -14,7 +14,7 @@
         img_r.loadPixels();
         img_g.loadPixels();
         img_b.loadPixels();
-        for(x=0;x<img.width;x++) {
+        for(x = 0; x < img.width; x++) {
             for (y = 0; y < img.height; y++) {
                 pos = 4 * (y * img.width + x);
                 img_r.pixels[pos] = img.pixels[pos]; //to jest wartość dla R
