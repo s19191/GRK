@@ -13,7 +13,7 @@
         img_h.loadPixels();
         img_s.loadPixels();
         img_l.loadPixels();
-        for(x = 0; x < img.width; x++) {
+        for (x = 0; x < img.width; x++) {
             for (y = 0; y < img.height; y++) {
                 pos = 4 * (y * img.width + x);
                 r = img.pixels[pos] / 255;
@@ -23,15 +23,34 @@
                 cmax = Math.max(r, g, b);
                 cmin = Math.min(r, g, b);
 
+                v = cmax;
                 l = (cmax + cmin) / 2;
                 c = cmax - cmin;
                 s = c / (1 - Math.abs(2 * l - 1));
+
+                let h;
+
+                if(c==0)
+                    h=0;
+                else if(v==r)
+                    h=((g-b)/c)%6;
+                else if(v==g)
+                    h=((b-r)/c)+2;
+                else /*v==b*/
+                    h=((r-g)/c)+4;
+
+                h /= 6;
+
+                if ( h < 0 ) {
+                    h+=1;
+                }
 
                 a = (pos / 4) % 256; //indeks kolumny wewnątrz wiersza
                 b = (pos / 4) / 256; //indeks wiersza
 
                 img_l.set( a, b, 255 * l);
                 img_s.set( a, b, 255 * s);
+                img_h.set( a, b, 255 * h);
             }
         }
         img_h.updatePixels();
