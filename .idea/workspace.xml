@@ -19,10 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a075744-5f4c-4d19-8a9a-a12190a19d9e" name="Default Changelist" comment="nie działa zad01">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zad03/Prosty algorytm do rysowania linii.html" beforeDir="false" afterPath="$PROJECT_DIR$/zad03/Prosty algorytm do rysowania linii.html" afterDir="false" />
-    </list>
+    <list default="true" id="0a075744-5f4c-4d19-8a9a-a12190a19d9e" name="Default Changelist" comment="naprawione zad01 oraz zad02 pierwsza część" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -159,7 +156,7 @@
       <workItem from="1605627787187" duration="3789000" />
       <workItem from="1605882408069" duration="202000" />
       <workItem from="1605893150360" duration="3780000" />
-      <workItem from="1605910895145" duration="3415000" />
+      <workItem from="1605910895145" duration="3754000" />
     </task>
     <task id="LOCAL-00013" summary="początek zad03">
       <created>1605627602905</created>
@@ -175,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605896667085</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="naprawione zad01 oraz zad02 pierwsza część">
+      <created>1605915243624</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1605915243624</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,7 +212,8 @@
     <MESSAGE value="zmieniona nazwa zadania 2" />
     <MESSAGE value="początek zad03" />
     <MESSAGE value="nie działa zad01" />
-    <option name="LAST_COMMIT_MESSAGE" value="nie działa zad01" />
+    <MESSAGE value="naprawione zad01 oraz zad02 pierwsza część" />
+    <option name="LAST_COMMIT_MESSAGE" value="naprawione zad01 oraz zad02 pierwsza część" />
   </component>
   <component name="WindowStateProjectService">
     <state x="805" y="311" key="FileChooserDialogImpl" timestamp="1605882609585">
