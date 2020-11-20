@@ -37,20 +37,20 @@
 
     function set_pixel(x, y, c) {
         idx = (y * 512 + x) * 4;
-        pixels[idx] = c;
+        pixels[idx] = -c;
         pixels[idx + 1] = c;
-        pixels[idx + 2] = c;
+        pixels[idx + 2] = 0;
         pixels[idx + 3] = 255;
     }
 
     function draw_line() {
         var dx = x1 - x0;
         var dy = y1 - y0;
-        var a = dy / dx;
-        var b = y0 - a * x0;
 
-        for (let i = x0; i<x1; i++) {
-            set_pixel(i, Math.round(a * i + b), 0);
+        for (let i = 0; i < 512; i++) {
+            for (let j = 0; j < 512; j++) {
+                set_pixel(i, j, dy / dx * (i - x0) - (j - y0));
+            }
         }
     }
 
