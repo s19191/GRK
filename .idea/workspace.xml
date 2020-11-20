@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a075744-5f4c-4d19-8a9a-a12190a19d9e" name="Default Changelist" comment="zmieniona nazwa zadania 2" />
+    <list default="true" id="0a075744-5f4c-4d19-8a9a-a12190a19d9e" name="Default Changelist" comment="początek zad03">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zad03/Prosty algorytm do rysowania linii.html" beforeDir="false" afterPath="$PROJECT_DIR$/zad03/Prosty algorytm do rysowania linii.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,6 +57,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -151,8 +155,19 @@
       <workItem from="1605627297906" duration="68000" />
       <workItem from="1605627372094" duration="50000" />
       <workItem from="1605627427422" duration="81000" />
+      <workItem from="1605627514975" duration="262000" />
+      <workItem from="1605627787187" duration="3789000" />
+      <workItem from="1605882408069" duration="202000" />
+      <workItem from="1605893150360" duration="3067000" />
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="początek zad03">
+      <created>1605627602905</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1605627602905</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,13 +198,18 @@
     <MESSAGE value="zmianny wizualne" />
     <MESSAGE value="zrobione 5" />
     <MESSAGE value="zmieniona nazwa zadania 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="zmieniona nazwa zadania 2" />
+    <MESSAGE value="początek zad03" />
+    <option name="LAST_COMMIT_MESSAGE" value="początek zad03" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="617" y="289" key="Vcs.Push.Dialog.v2" timestamp="1605373010079">
+    <state x="805" y="311" key="FileChooserDialogImpl" timestamp="1605882609585">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="617" y="289" key="Vcs.Push.Dialog.v2/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1605373010079" />
+    <state x="805" y="311" key="FileChooserDialogImpl/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1605882609585" />
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2" timestamp="1605627614201">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1605627614201" />
     <state x="842" y="470" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605627309600">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
