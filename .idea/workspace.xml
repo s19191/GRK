@@ -19,7 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a075744-5f4c-4d19-8a9a-a12190a19d9e" name="Default Changelist" comment="naprawione zad01 oraz zad02 pierwsza część" />
+    <list default="true" id="0a075744-5f4c-4d19-8a9a-a12190a19d9e" name="Default Changelist" comment="dodana cześć druga zad02">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zad03/Prosty algorytm do rysowania linii.html" beforeDir="false" afterPath="$PROJECT_DIR$/zad03/Prosty algorytm do rysowania linii.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zad03/Wstęp do algorytmu_DrugaCzęść.html" beforeDir="false" afterPath="$PROJECT_DIR$/zad03/Wstęp do algorytmu_DrugaCzęść.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zad03/Wstęp do algorytmu_PierwszaCzęść.html" beforeDir="false" afterPath="$PROJECT_DIR$/zad03/Wstęp do algorytmu_PierwszaCzęść.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -156,7 +161,7 @@
       <workItem from="1605627787187" duration="3789000" />
       <workItem from="1605882408069" duration="202000" />
       <workItem from="1605893150360" duration="3780000" />
-      <workItem from="1605910895145" duration="3754000" />
+      <workItem from="1605910895145" duration="4736000" />
     </task>
     <task id="LOCAL-00013" summary="początek zad03">
       <created>1605627602905</created>
@@ -179,7 +184,21 @@
       <option name="project" value="LOCAL" />
       <updated>1605915243624</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="naprawione zad01 oraz zad02 pierwsza część">
+      <created>1605915386990</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1605915386990</updated>
+    </task>
+    <task id="LOCAL-00017" summary="dodana cześć druga zad02">
+      <created>1605915562883</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1605915562883</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,17 +232,19 @@
     <MESSAGE value="początek zad03" />
     <MESSAGE value="nie działa zad01" />
     <MESSAGE value="naprawione zad01 oraz zad02 pierwsza część" />
-    <option name="LAST_COMMIT_MESSAGE" value="naprawione zad01 oraz zad02 pierwsza część" />
+    <MESSAGE value="dodana cześć druga zad02" />
+    <option name="LAST_COMMIT_MESSAGE" value="dodana cześć druga zad02" />
   </component>
   <component name="WindowStateProjectService">
     <state x="805" y="311" key="FileChooserDialogImpl" timestamp="1605882609585">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="805" y="311" key="FileChooserDialogImpl/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1605882609585" />
-    <state x="617" y="289" key="Vcs.Push.Dialog.v2" timestamp="1605896672745">
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2" timestamp="1605915565126">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="617" y="289" key="Vcs.Push.Dialog.v2/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1605896672745" />
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2/0.0.2048.1112/2560.0.2560.1400@0.0.2048.1112" timestamp="1605915565126" />
     <state x="842" y="470" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605627309600">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>

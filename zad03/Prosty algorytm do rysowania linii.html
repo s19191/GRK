@@ -44,13 +44,24 @@
     }
 
     function draw_line() {
-        var dx = x1 - x0;
-        var dy = y1 - y0;
-        var a = dy / dx;
-        var b = y0 - a * x0;
+        if (x0 < x1) {
+            var dx = x1 - x0;
+            var dy = y1 - y0;
+            var a = dy / dx;
+            var b = y0 - a * x0;
 
-        for (let i = x0; i<x1; i++) {
-            set_pixel(i, Math.round(a * i + b), 0);
+            for (let i = x0; i <= x1; i++) {
+                set_pixel(i, Math.round(a * i + b), 0);
+            }
+        } else {
+            var dx = x0 - x1;
+            var dy = y0 - y1;
+            var a = dy / dx;
+            var b = y1 - a * x1;
+
+            for (let i = x1; i <= x0; i++) {
+                set_pixel(i, Math.round(a * i + b), 0);
+            }
         }
     }
 
