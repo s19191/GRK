@@ -46,15 +46,24 @@
     function flood_fill(x,y) {
         stos = [];
         stos.push([x,y]);
-        while (stos.length > 0) {
+        cnt = 10000;
+        while (stos.length > 0 && cnt>0) {
             [x,y]=stack.pop();
-            if (x < 0 || x > 512 || y < 0 || y > 512) continue;
-            if (get_pixel(x, y) !== 255) continue;
+
+            if (x < 0 || x > 512 || y < 0 || y > 512) {
+                continue;
+            }
+
+            if (get_pixel(x, y) !== 255) {
+                continue;
+            }
+
             set_pixel(x, y, 200);
             stack.push([x, y - 1]);
             stack.push([x, y + 1]);
             stack.push([x - 1, y]);
             stack.push([x + 1, y]);
+            cnt--;
         }
     }
 </script>
