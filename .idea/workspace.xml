@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a075744-5f4c-4d19-8a9a-a12190a19d9e" name="Default Changelist" comment="zmiany nazw zmiennych">
+    <list default="true" id="0a075744-5f4c-4d19-8a9a-a12190a19d9e" name="Default Changelist" comment="drobne poprawki">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -158,7 +158,7 @@
       <workItem from="1605627787187" duration="3789000" />
       <workItem from="1605882408069" duration="202000" />
       <workItem from="1605893150360" duration="3780000" />
-      <workItem from="1605910895145" duration="5794000" />
+      <workItem from="1605910895145" duration="7558000" />
     </task>
     <task id="LOCAL-00013" summary="początek zad03">
       <created>1605627602905</created>
@@ -209,7 +209,21 @@
       <option name="project" value="LOCAL" />
       <updated>1605916381231</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="zad4">
+      <created>1605917490814</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1605917490814</updated>
+    </task>
+    <task id="LOCAL-00021" summary="drobne poprawki">
+      <created>1605917629299</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1605917629299</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,17 +260,19 @@
     <MESSAGE value="dodana cześć druga zad02" />
     <MESSAGE value="dodane zadanie 3" />
     <MESSAGE value="zmiany nazw zmiennych" />
-    <option name="LAST_COMMIT_MESSAGE" value="zmiany nazw zmiennych" />
+    <MESSAGE value="zad4" />
+    <MESSAGE value="drobne poprawki" />
+    <option name="LAST_COMMIT_MESSAGE" value="drobne poprawki" />
   </component>
   <component name="WindowStateProjectService">
     <state x="805" y="311" key="FileChooserDialogImpl" timestamp="1605882609585">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="805" y="311" key="FileChooserDialogImpl/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1605882609585" />
-    <state x="617" y="289" key="Vcs.Push.Dialog.v2" timestamp="1605916385534">
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2" timestamp="1605917631199">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="617" y="289" key="Vcs.Push.Dialog.v2/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1605896672745" />
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1605917631199" />
     <state x="617" y="289" key="Vcs.Push.Dialog.v2/0.0.2048.1112/2560.0.2560.1400@0.0.2048.1112" timestamp="1605916385534" />
     <state x="842" y="470" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605627309600">
       <screen x="0" y="0" width="2048" height="1112" />
