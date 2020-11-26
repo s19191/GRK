@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a075744-5f4c-4d19-8a9a-a12190a19d9e" name="Default Changelist" comment="zad0">
+    <list default="true" id="0a075744-5f4c-4d19-8a9a-a12190a19d9e" name="Default Changelist" comment="początek zad2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zad04/Wektorowa reprezentacja obrazów.html" beforeDir="false" afterPath="$PROJECT_DIR$/zad04/Wektorowa reprezentacja obrazów.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zad04/Macierze przekształceń.html" beforeDir="false" afterPath="$PROJECT_DIR$/zad04/Macierze przekształceń.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +168,7 @@
       <workItem from="1606298693694" duration="2071000" />
       <workItem from="1606419064031" duration="348000" />
       <workItem from="1606419443688" duration="80000" />
-      <workItem from="1606421489901" duration="3096000" />
+      <workItem from="1606421489901" duration="6021000" />
     </task>
     <task id="LOCAL-00013" summary="początek zad03">
       <created>1605627602905</created>
@@ -261,7 +261,21 @@
       <option name="project" value="LOCAL" />
       <updated>1606071679798</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="chyba zad 1 zrobione">
+      <created>1606429240213</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1606429240213</updated>
+    </task>
+    <task id="LOCAL-00027" summary="początek zad2">
+      <created>1606429454919</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1606429454919</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,18 +316,20 @@
     <MESSAGE value="drobne poprawki" />
     <MESSAGE value="zad5" />
     <MESSAGE value="zad0" />
-    <option name="LAST_COMMIT_MESSAGE" value="zad0" />
+    <MESSAGE value="chyba zad 1 zrobione" />
+    <MESSAGE value="początek zad2" />
+    <option name="LAST_COMMIT_MESSAGE" value="początek zad2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="805" y="311" key="FileChooserDialogImpl" timestamp="1606419069667">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="805" y="311" key="FileChooserDialogImpl/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1606419069667" />
-    <state x="617" y="289" key="Vcs.Push.Dialog.v2" timestamp="1606071683949">
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2" timestamp="1606429457597">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="617" y="289" key="Vcs.Push.Dialog.v2/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1606071683949" />
-    <state x="617" y="289" key="Vcs.Push.Dialog.v2/0.0.2048.1112/2560.0.2560.1400@0.0.2048.1112" timestamp="1605919322368" />
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2/0.0.2048.1112/2560.0.2560.1400@0.0.2048.1112" timestamp="1606429457597" />
     <state x="842" y="470" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606070481579">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
