@@ -46,6 +46,11 @@
     function mouseDragged() {
         vector = makeVector(mouseX, mouseY);
         drawVector(imgA, vector);
+        drawVector(imgB, makeMultiplication(vector, makeIdentity()));
+        // drawVector(imgB, makeMultiplication(vector, makeDisplacement(0, -50)));
+        // drawVector(imgB, makeMultiplication(vector, makeScale(0.5, 0.5)));
+        // drawVector(imgB, makeMultiplication(vector, makeRotation(30)));
+        // drawVector(imgB, makeMultiplication(vector, makeShear(0.5, 0.1)));
     }
 
     function makeVector(x, y) {
@@ -76,6 +81,16 @@
     function makeShear(Shx, Shy) {
         var matrix = [[1, Shx, 0], [Shy, 1, 0], [0, 0, 1]];
         return matrix;
+    }
+
+    function makeMultiplication(vector, matrix) {
+        soltion = [0, 0, 0];
+        for (let i = 0; i < 3; i++) {
+            for (let j = 0; j < 3; j++) {
+                soltion[i] += matrix[i][j] * vector[j];
+            }
+        }
+        return soltion;
     }
 
     function calculateAngle(angle) {
