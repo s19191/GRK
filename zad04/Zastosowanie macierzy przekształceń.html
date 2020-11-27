@@ -46,10 +46,10 @@
     function mouseDragged() {
         vector = makeVector(mouseX, mouseY);
         drawVector(imgA, vector);
-        // drawVector(imgB, makeMultiplication(vector, makeIdentity()));
+        drawVector(imgB, makeMultiplication(vector, makeIdentity()));
         // drawVector(imgB, makeMultiplication(vector, makeDisplacement(0, -50)));
         // drawVector(imgB, makeMultiplication(vector, makeScale(0.5, 0.5)));
-        // drawVector(imgB, makeMultiplication(vector, makeRotation(30)));
+        // drawVector(imgB, makeMultiplication(vector, makeRotation(90)));
         // drawVector(imgB, makeMultiplication(vector, makeShear(0.5, 0.1)));
     }
 
@@ -73,8 +73,8 @@
         return matrix;
     }
 
-    function makeRotation(alpha) {
-        var matrix = [[Math.cos(calculateAngle(alpha)), -Math.sin(calculateAngle(alpha)), 0], [Math.sin(calculateAngle(alpha)), Math.cos(calculateAngle(alpha)), 0], [0, 0, 1]];
+    function makeRotation(angle) {
+        var matrix = [[Math.cos(calculateAngle(angle)), -Math.sin(calculateAngle(angle)), 0], [Math.sin(calculateAngle(angle)), Math.cos(calculateAngle(angle)), 0], [0, 0, 1]];
         return matrix;
     }
 
