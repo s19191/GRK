@@ -19,8 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a075744-5f4c-4d19-8a9a-a12190a19d9e" name="Default Changelist" comment="początek zad3">
+    <list default="true" id="0a075744-5f4c-4d19-8a9a-a12190a19d9e" name="Default Changelist" comment="chyba zad3 zrobione">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zad04/Macierze przekształceń.html" beforeDir="false" afterPath="$PROJECT_DIR$/zad04/Macierze przekształceń.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zad04/Zastosowanie macierzy przekształceń.html" beforeDir="false" afterPath="$PROJECT_DIR$/zad04/Zastosowanie macierzy przekształceń.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -169,7 +170,7 @@
       <workItem from="1606419064031" duration="348000" />
       <workItem from="1606419443688" duration="80000" />
       <workItem from="1606421489901" duration="6980000" />
-      <workItem from="1606481409630" duration="6970000" />
+      <workItem from="1606481409630" duration="8134000" />
     </task>
     <task id="LOCAL-00013" summary="początek zad03">
       <created>1605627602905</created>
@@ -297,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606432480062</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="chyba zad3 zrobione">
+      <created>1606497087525</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1606497087525</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,7 +324,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="zrobione 1 zadanie" />
     <MESSAGE value="2 zrobione" />
     <MESSAGE value="początek 3" />
     <MESSAGE value="poprawki wizualne" />
@@ -341,21 +348,22 @@
     <MESSAGE value="początek zad2" />
     <MESSAGE value="zad2" />
     <MESSAGE value="początek zad3" />
-    <option name="LAST_COMMIT_MESSAGE" value="początek zad3" />
+    <MESSAGE value="chyba zad3 zrobione" />
+    <option name="LAST_COMMIT_MESSAGE" value="chyba zad3 zrobione" />
   </component>
   <component name="WindowStateProjectService">
     <state x="805" y="311" key="FileChooserDialogImpl" timestamp="1606419069667">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="805" y="311" key="FileChooserDialogImpl/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1606419069667" />
-    <state x="617" y="289" key="Vcs.Push.Dialog.v2" timestamp="1606432482641">
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2" timestamp="1606497090671">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="617" y="289" key="Vcs.Push.Dialog.v2/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1606071683949" />
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1606497090671" />
     <state x="617" y="289" key="Vcs.Push.Dialog.v2/0.0.2048.1112/2560.0.2560.1400@0.0.2048.1112" timestamp="1606432482641" />
-    <state x="842" y="470" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606070481579">
+    <state x="842" y="470" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606498322366">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="842" y="470" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1606070481579" />
+    <state x="842" y="470" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1606498322366" />
   </component>
 </project>
