@@ -1,20 +1,76 @@
 <style> body { background-color:#ccc; } </style>
 <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.js"></script>
+<head>
+    <meta charset="UTF-8">
+</head>
 <body>
+<h2>
+    <label for="resetButton">Kliknij, aby zresetować</label>
+    <button onclick="resetCanvas()" id="resetButton">Resetuj</button>
+    <p>
+        <label for="tx">O ile przesunąć w płaszczyźnie x:</label>
+        <input type="number" min=-100 max=100 step=1 id="tx"
+           oninput="translateXoutput.value = translateX.value"><output id="translateXoutput">0</output>
+    </p>
+    <p>
+        <label for="ty">O ile przesunąć w płaszczyźnie y:</label>
+        <input type="number" min=-100 max=100 step=1 id="ty"
+           oninput="translateYoutput.value = translateY.value"><output id="translateYoutput">0</output>
+    </p>
+    <p>
+        <label for="moveButton">Kliknij, aby przesunąć</label>
+        <button onclick="translateCanvas()" id="moveButton">Przesuń</button>
+    </p>
+    <p>
+        <label for="angle">O jaki kąt obrócić:</label>
+        <input type="numer" min=0 max=360 step=1 id="angle"
+           oninput="rotateValOutput.value = rotateVal.value"><output id="rotateValOutput">0</output>
+    </p>
+    <p>
+        <label for="rotateButton">Kliknij, aby obrócić</label>
+        <button onclick="rotateCanvas()" id="rotateButton">Obróć</button>
+    </p>
+    <p>
+        <label for="sx">O ile przeskalować w płaszczyźnie x:</label>
+        <input type="number" min=0.05 max=3 step=0.05 id="sx"
+           oninput="scaleXoutput.value = scaleX.value"><output id="scaleXoutput">0</output>
+    </p>
+    <p>
+        <label for="sy">O ile przeskalować w płaszczyźnie y:</label>
+        <input type="number" min=0.05 max=3 step=0.05 id="sy"
+           oninput="scaleYoutput.value = scaleY.value"><output id="scaleYoutput">0</output>
+    </p>
+    <p>
+        <label for="scaleButton">Kliknij, aby przeskalować</label>
+        <button onclick="rotateCanvas()" id="scaleButton">Przeskaluj</button>
+    </p>
+    <p>
+        <label for="shx">O ile pochylić w płaszczyźnie x:</label>
+        <input type="number" min=-2 max=2 step=0.05 id="shx"
+               oninput="shearKSoutput.value = shearKS.value"><output id="shearKSoutput">0</output>
+    </p>
+    <p>
+        <label for="shy">O ile pochylić w płaszczyźnie y:</label>
+        <input type="number" min=-2 max=2 step=0.05 id="shy"
+               oninput="shearYGoutput.value = shearYG.value"><output id="shearYGoutput">0</output>
+    </p>
+    <p>
+        <label for="shearButton">Kliknij, aby pochylić</label>
+        <button onclick="shearCanvas()" id="shearButton">Pochyl</button>
+    </p>
+</h2>
+</body>
 <script type="text/javascript">
     var imgA;
     var imgB;
-    var imgC;
 
     function setup() {
         createCanvas(512,512);
         background(255);
         imgA = createImage(512,512);
         imgB = createImage(512,512);
-        imgC = createImage(512,512);
         imgA.loadPixels();
         imgB.loadPixels();
-        imgC.loadPixels();
         var d = pixelDensity();
         for(var i=0; i<512*512*4*d; i+=4) {
             imgA.pixels[i]=240;
@@ -25,26 +81,18 @@
             imgB.pixels[i+1]=240;
             imgB.pixels[i+2]=250;
             imgB.pixels[i+3]=255;
-            imgC.pixels[i]=240;
-            imgC.pixels[i+1]=240;
-            imgC.pixels[i+2]=250;
-            imgC.pixels[i+3]=255;
         }
         imgA.updatePixels();
         imgB.updatePixels();
-        imgC.updatePixels();
     }
 
     function draw() {
-        if (!keyIsDown(32) && !keyIsDown(13)) {
+        if (!keyIsDown(32)) {
             image(imgA,0,0);
             text('Image A',10,20);
-        } else if (keyIsDown(32) && !keyIsDown(13)){
-            image(imgB,0,0);
-            text('Image B',10,20);
         } else {
-            image(imgC,0,0);
-            text('Image C',10,20);
+            image(imgB, 0, 0);
+            text('Image B', 10, 20);
         }
     }
 
@@ -59,7 +107,6 @@
         drawVector(imgA, vector);
         // drawVector(imgB, makeMultiplication(vector, makeMatrixMultiplication(makeIdentity(), makeIdentity())));
         drawVector(imgB, makeMultiplication(vector, makeMatrixMultiplication(makeMatrixMultiplication(makeDisplacement(0, -50), makeRotation(30)), makeScale(0.5, 0.5))));
-        drawVector(imgC, makeMultiplication(vector, makeMatrixMultiplication(makeMatrixMultiplication(makeScale(0.5, 0.5), makeDisplacement(0, -50)), makeRotation(30))));
     }
 
     function makeVector(x, y) {
@@ -118,4 +165,3 @@
         return soltion;
     }
 </script>
-</body>
