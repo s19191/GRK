@@ -97,25 +97,25 @@
     }
 
     function makeMultiplication(vector, matrix) {
-        soltion = [0, 0, 0];
+        solutionMatrix = [0, 0, 0];
         for (let i = 0; i < matrix.length; i++) {
             for (let j = 0; j < matrix.length; j++) {
-                soltion[i] += matrix[i][j] * vector[j];
+                solutionMatrix[i] += matrix[i][j] * vector[j];
             }
         }
-        return soltion;
+        return solutionMatrix;
     }
 
     function makeMatrixMultiplication(matrix1, matrix2) {
-        soltion = [[0, 0, 0], [0, 0, 0], [0, 0, 0]];
+        solutionMatrix = [[0, 0, 0], [0, 0, 0], [0, 0, 0]];
         for (let i = 0; i < 3; i++) {
             for (let j = 0; j < 3; j++) {
                 for (let k = 0; k < 3; k++) {
-                    soltion[i][j] += matrix1[i][k] * matrix2[k][j];
+                    solutionMatrix[i][j] += matrix1[i][k] * matrix2[k][j];
                 }
             }
         }
-        return soltion;
+        return solutionMatrix;
     }
 </script>
 </body>

@@ -19,9 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a075744-5f4c-4d19-8a9a-a12190a19d9e" name="Default Changelist" comment="początek zad5">
+    <list default="true" id="0a075744-5f4c-4d19-8a9a-a12190a19d9e" name="Default Changelist" comment="dodane coś do zad5, ale nie działa">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zad04/Interaktywna aplikacja.html" beforeDir="false" afterPath="$PROJECT_DIR$/zad04/Interaktywna aplikacja.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zad04/Zastosowanie macierzy przekształceń.html" beforeDir="false" afterPath="$PROJECT_DIR$/zad04/Zastosowanie macierzy przekształceń.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zad04/Łączenie przekształceń.html" beforeDir="false" afterPath="$PROJECT_DIR$/zad04/Łączenie przekształceń.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +35,8 @@
       <list>
         <option value="TypeScript File" />
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -172,7 +174,13 @@
       <workItem from="1606419443688" duration="80000" />
       <workItem from="1606421489901" duration="6980000" />
       <workItem from="1606481409630" duration="14736000" />
-      <workItem from="1606515316131" duration="6780000" />
+      <workItem from="1606515316131" duration="6961000" />
+      <workItem from="1606907930036" duration="2137000" />
+      <workItem from="1606912821402" duration="98000" />
+      <workItem from="1606931253240" duration="14000" />
+      <workItem from="1607088887638" duration="1192000" />
+      <workItem from="1607125473431" duration="777000" />
+      <workItem from="1607189534909" duration="8750000" />
     </task>
     <task id="LOCAL-00013" summary="początek zad03">
       <created>1605627602905</created>
@@ -349,7 +357,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606503502083</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="dodane coś do zad5, ale nie działa">
+      <created>1606523421433</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1606523421433</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,7 +383,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="zrobione 3" />
     <MESSAGE value="zrobione 4 i poprawione nazwy na img_l" />
     <MESSAGE value="początek histogram" />
     <MESSAGE value="lekkie zmiany wizualne" />
@@ -393,25 +407,7 @@
     <MESSAGE value="zad3" />
     <MESSAGE value="zad4" />
     <MESSAGE value="początek zad5" />
-    <option name="LAST_COMMIT_MESSAGE" value="początek zad5" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="651" y="235" key="#Inspections" timestamp="1606521786322">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state x="651" y="235" key="#Inspections/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1606521786322" />
-    <state x="805" y="311" key="FileChooserDialogImpl" timestamp="1606515452594">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state x="805" y="311" key="FileChooserDialogImpl/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1606515452594" />
-    <state x="617" y="289" key="Vcs.Push.Dialog.v2" timestamp="1606503505924">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state x="617" y="289" key="Vcs.Push.Dialog.v2/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1606498362576" />
-    <state x="617" y="289" key="Vcs.Push.Dialog.v2/0.0.2048.1112/2560.0.2560.1400@0.0.2048.1112" timestamp="1606503505924" />
-    <state x="842" y="470" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606498322366">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state x="842" y="470" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1606498322366" />
+    <MESSAGE value="dodane coś do zad5, ale nie działa" />
+    <option name="LAST_COMMIT_MESSAGE" value="dodane coś do zad5, ale nie działa" />
   </component>
 </project>
