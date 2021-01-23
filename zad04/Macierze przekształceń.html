@@ -1,0 +1,47 @@
+<style> body { background-color:#ccc; } </style>
+<script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.js"></script>
+<body>
+<script type="text/javascript">
+
+    function makeVector(x, y) {
+        var tab=[x, y, 1];
+        return tab;
+    }
+
+    function makeIdentity() {
+        var matrix = [[1, 0, 0], [0, 1, 0], [0, 0, 1]];
+        return matrix;
+    }
+
+    function makeDisplacement(tx, ty) {
+        var matrix = [[1, 0, tx], [0, 1, ty], [0, 0, 1]];
+        return matrix;
+    }
+
+    function makeScale(sx, sy) {
+        var matrix = [[sx, 0, 0], [0, sy, 0], [0, 0, 1]];
+        return matrix;
+    }
+
+    function makeRotation(alpha) {
+        var matrix = [[Math.cos(calculateAngle(alpha)), -Math.sin(calculateAngle(alpha)), 0], [Math.sin(calculateAngle(alpha)), Math.cos(calculateAngle(alpha)), 0], [0, 0, 1]];
+        return matrix;
+    }
+
+    function calculateAngle(angle) {
+        return angle / 180 * Math.PI;
+    }
+
+    function makeShear(Shx, Shy) {
+        var matrix = [[1, Shx, 0], [Shy, 1, 0], [0, 0, 1]];
+        return matrix;
+    }
+
+    console.log(makeVector(2, 3));
+    console.log(makeIdentity());
+    console.log(makeDisplacement(2, 3));
+    console.log(makeScale(2, 3));
+    console.log(makeRotation(30));
+    console.log(makeShear(2, 3));
+</script>
+</body>
