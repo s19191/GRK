@@ -1,0 +1,49 @@
+<script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.js"></script>
+
+<script>
+    let x1, x2, x3, y1, y2, y3;
+    function setup() {
+        createCanvas(800, 600);
+        x1=floor(width/2);
+        y1=floor(height*0.1);
+        x2=floor(width*0.1);
+        y2=floor(height*0.9);
+        x3=floor(width*0.9);
+        y3=floor(height*0.9);
+        noLoop();
+    }
+
+    function draw() {
+        background(1);
+        stroke('white');
+        point(x1, y1);
+        point(x2, y2);
+        point(x3, y3);
+        let cx = x1, cy = y1;
+
+        for (let i = 0; i<30000; i++) {
+            a = Math.floor(random(0, 3));
+            switch (a) {
+                case 0: {
+                    cx = floor((cx+x1)/2);
+                    cy = floor((cy+y1)/2);
+                    point(cx, cy);
+                    break;
+                }
+                case 1: {
+                    cx = floor((cx+x2)/2);
+                    cy = floor((cy+y2)/2);
+                    point(cx, cy);
+                    break;
+                }
+                default: {
+                    cx = floor((cx+x3)/2);
+                    cy = floor((cy+y3)/2);
+                    point(cx, cy);
+                    break;
+                }
+            }
+        }
+        updatePixels();
+    }
+</script>

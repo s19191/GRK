@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GRK</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.js"></script>
+    <script type="text/javascript">
+        var imgA;
+        var imgB;
+        var matrix = makeIdentity();
+
+        function setup() {
+            createCanvas(512,512);
+            background(255);
+            clearAll();
+            updateMatrixTable();
+        }
+
+        function draw() {
+            if (!keyIsDown(32)) {
+                image(imgA,0,0);
+                text('Image A',10,20);
+            } else {
+                image(imgB, 0, 0);
+                text('Image B', 10, 20);
+            }
+        }
+
+        function drawVector(img, vec) {
+            img.loadPixels();
+            img.set(vec[0], vec[1], 0);
+            img.updatePixels();
+        }
+
+        function mouseDragged() {
+            vector = makeVector(mouseX, mouseY);
+            drawVector(imgA, vector);
+            drawVector(imgB, makeMultiplication(vector, matrix));
+        }
+
+        function makeVector(x, y) {
+            var tab=[x, y, 1];
+            return tab;
+        }
+
+        function makeIdentity() {
+            var matrix = [[1, 0, 0], [0, 1, 0], [0, 0, 1]];
+            return matrix;
+        }
+
+        function makeDisplacement() {
+            if (document.getElementById("TX") != null) {
+                tx = document.getElementById("TX").value;
+            }
+            if (document.getElementById("TY") != null) {
+                ty = document.getElementById("TY").value;
+            }
+            if (tx != null && ty != null) {
+                var displacementMatrix = [[1, 0, tx], [0, 1, ty], [0, 0, 1]];
+                matrix = makeMatrixMultiplication(matrix, displacementMatrix);
+                updateMatrixTable();
+                document.getElementById("TX").value = null;
+                document.getElementById("TY").value = null;
+            }
+        }
+
+        function makeScale() {
+            if (document.getElementById("SX") != null) {
+                sx = document.getElementById("SX").value;
+            }
+            if (document.getElementById("SY") != null) {
+                sy = document.getElementById("SY").value;
+            }
+            if (sx != null && sy != null) {
+                var scaleMatrix = [[sx, 0, 0], [0, sy, 0], [0, 0, 1]];
+                matrix = makeMatrixMultiplication(matrix, scaleMatrix);
+                updateMatrixTable();
+                document.getElementById("SX").value = null;
+                document.getElementById("SY").value = null;
+            }
+        }
+
+        function makeRotation() {
+            if (document.getElementById("ANGLE") != null) {
+                angle = document.getElementById("SX").value;
+                var rotationMatrix = [[Math.cos(calculateAngle(angle)), -Math.sin(calculateAngle(angle)), 0], [Math.sin(calculateAngle(angle)), Math.cos(calculateAngle(angle)), 0], [0, 0, 1]];
+                matrix = makeMatrixMultiplication(matrix, rotationMatrix);
+                updateMatrixTable();
+                document.getElementById("ANGLE").value = null;
+            }
+        }
+
+        function calculateAngle(angle) {
+            return angle / 180 * Math.PI;
+        }
+
+        function makeShear() {
+            if (document.getElementById("SHX") != null) {
+                Shx = document.getElementById("SHX").value;
+            }
+            if (document.getElementById("SHY") != null) {
+                Shy = document.getElementById("SHY").value;
+            }
+            if (Shx != null && Shy != null) {
+                var shearMatrix = [[1, Shx, 0], [Shy, 1, 0], [0, 0, 1]];
+                matrix = makeMatrixMultiplication(matrix, shearMatrix);
+                updateMatrixTable();
+                document.getElementById("SHX").value = null;
+                document.getElementById("SHY").value = null;
+            }
+        }
+
+        function makeMultiplication(vector, matrix) {
+            solutionMatrix = [0, 0, 0];
+            for (let i = 0; i < matrix.length; i++) {
+                for (let j = 0; j < matrix.length; j++) {
+                    solutionMatrix[i] += matrix[i][j] * vector[j];
+                }
+            }
+            return solutionMatrix;
+        }
+
+        function makeMatrixMultiplication(matrix1, matrix2) {
+            solutionMatrix = [[0, 0, 0], [0, 0, 0], [0, 0, 0]];
+            for (let i = 0; i < matrix1.length; i++) {
+                for (let j = 0; j < matrix1[i].length; j++) {
+                    for (let k = 0; k < matrix1.length; k++) {
+                        solutionMatrix[i][j] += matrix1[i][k] * matrix2[k][j];
+                    }
+                }
+            }
+            return solutionMatrix;
+        }
+
+        function clearMatrix() {
+            matrix = makeIdentity();
+            updateMatrixTable();
+        }
+
+        function clearAll() {
+            clearMatrix();
+            imgA = createImage(512,512);
+            imgB = createImage(512,512);
+            imgA.loadPixels();
+            imgB.loadPixels();
+            var d = pixelDensity();
+            for(var i=0; i<512*512*4*d; i+=4) {
+                imgA.pixels[i]=240;
+                imgA.pixels[i+1]=250;
+                imgA.pixels[i+2]=240;
+                imgA.pixels[i+3]=255;
+                imgB.pixels[i]=240;
+                imgB.pixels[i+1]=240;
+                imgB.pixels[i+2]=250;
+                imgB.pixels[i+3]=255;
+            }
+            imgA.updatePixels();
+            imgB.updatePixels();
+        }
+
+        function updateMatrixTable() {
+            let table = document.getElementById("matrixTable");
+            for(let i = 0; i < matrix.length; i++) {
+                for(let j = 0; j < matrix[i].length; j++) {
+                    table.rows[i].cells[j].innerHTML = matrix[i][j];
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<div>
+    <p>Macierz</p>
+    <table id="matrixTable">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <p>Reset</p>
+    <div>
+        <label for="resetAllButton">Kliknij, aby zresetować całość</label>
+        <button id="resetAllButton" onclick="clearAll()">Reset całości</button>
+        <label for="resetMatrixButton">Kliknij, aby zresetować macierz</label>
+        <button id="resetMatrixButton" onclick="clearMatrix()">Reset macierz</button>
+    </div>
+    <p>Przesunięcie</p>
+    <div>
+        <input type="number" placeholder="x" min=-100 max=100 id="TX">
+        <input type="number" placeholder="y" min=-100 max=100 id="TY">
+        <button id="displacementButton" onclick="makeDisplacement()">Przesuń</button>
+    </div>
+    <p>Skalowanie</p>
+    <div>
+        <input type="number" placeholder="x" min=0.05 max=3 step=0.05 id="SX">
+        <input type="number" placeholder="y" min=0.05 max=3 step=0.05 id="SY">
+        <button id="scaleButton" onclick="makeScale()">Skaluj</button>
+    </div>
+    <p>Obrót</p>
+    <div>
+        <input type="number" placeholder="angle" min=0 max=360 id="ANGLE">
+        <button id="rotationButton" onclick="makeRotation()">Obróć</button>
+    </div>
+    <p>Pochylenie</p>
+    <div>
+        <input type="number" placeholder="x" min=-2 max=2 step=0.05 id="SHX">
+        <input type="number" placeholder="y" min=-2 max=2 step=0.05 id="SHY">
+        <button id="shearButton" onclick="makeShear()">Pochyl</button>
+    </div>
+</div>
+</body>
+</html>
