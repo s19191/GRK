@@ -19,7 +19,6 @@
     <select />
   </component>
   <component name="ChangeListManager">
-
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +53,5 @@
         </entry>
       </map>
     </option>
-
   </component>
 </project>
