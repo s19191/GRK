@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9b4cc813-d10d-49a0-b75b-00054d35a887" name="Default Changelist" comment="Fraktale" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="Wprowadzenie" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1jSv1x7DYR5BxFgt1VCGOAFAfwG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9b4cc813-d10d-49a0-b75b-00054d35a887" name="Default Changelist" comment="" />
+      <created>1603810096640</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603810096640</updated>
+      <workItem from="1603810097787" duration="7703000" />
+      <workItem from="1603827712188" duration="4427000" />
+    </task>
+    <task id="LOCAL-00001" summary="Pierwsze kroki">
+      <created>1603811620737</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603811620737</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Piksele">
+      <created>1603812125077</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603812125077</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Gradienty">
+      <created>1603812533352</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603812533352</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Obrazek">
+      <created>1603816551303</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603816551303</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Gradienty Kolory">
+      <created>1603828057342</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1603828057342</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Fraktale">
+      <created>1603839973021</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1603839973021</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Pierwsze kroki" />
+    <MESSAGE value="Piksele" />
+    <MESSAGE value="Gradienty" />
+    <MESSAGE value="Obrazek" />
+    <MESSAGE value="Gradienty Kolory" />
+    <MESSAGE value="Fraktale" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fraktale" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2" timestamp="1603839982857">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="617" y="289" key="Vcs.Push.Dialog.v2/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1603839982857" />
+    <state x="842" y="470" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603811115119">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="842" y="470" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1603811115119" />
+  </component>
+</project>
